@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Board from './Board';
 
 class GameBoard extends Component {
   render() {
-    return <h1>This is the Game Board</h1>;
+    return <Board />;
   }
 }
 

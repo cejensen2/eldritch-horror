@@ -15,7 +15,9 @@ const createApp = () => {
   app.use(express.static(path.join(__dirname, '.', 'public')));
 
   app.use((req, res, next) => {
-    if (path.extname(req.path).length) {
+    if (path.extname(req.path) === '.json') {
+      res.sendFile(path.join(__dirname, '.', `${req.path}`));
+    } else if (path.extname(req.path).length) {
       const err = new Error('Not found');
       err.status = 404;
       next(err);
