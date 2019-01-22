@@ -1,0 +1,39 @@
+- implement game setup :
+  Xplace characters
+  Xspawn clues
+  -spawn gates + monsters
+  Xset Doom
+  -create Mythos deck
+- implement character actions:
+  Xmove
+  -shop
+  Xacquire ticket
+  Xrest
+  -local actions...
+-implement store
+-store data:
+  Xitems
+  -artifacts
+  -mythos cards
+  -monsters
+  -encounters
+-implement dice rolling
+-implement deck shuffling?
+-implement skill checks
+-implement combat checks
+-implement spell checks
+-implement conditions
+-implement redux stores:
+  -items/artifacts
+  -spells
+  -conditions
+  Xmythos
+-implement win conditions
+-implement loss conditions
+-implement mythos actions:
+  -advance omen
+  -monster surge
+  Xspawn clues
+  -reckoning
+  Xspawn gates
+Ximplement player turn order

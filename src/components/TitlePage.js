@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class TitlePage extends Component {
   render() {
@@ -9,8 +10,10 @@ class TitlePage extends Component {
           Welcome to Eldritch Horror, a fun game of Lovecraftian adventure for
           1-8 players
         </p>
-        <button>New Game</button> <button>Rules</button>{' '}
-        <button>Exit Game</button>
+        <Link to="/gamesetup">
+          <button type="button">New Game</button>
+        </Link>
+        <button>Rules</button> <button>Exit Game</button>
       </React.Fragment>
     );
   }
